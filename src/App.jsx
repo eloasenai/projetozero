@@ -9,6 +9,7 @@ function App() {
 
   return (
     <>
+
       
       <h1></h1>
       <div className="card">
@@ -17,6 +18,7 @@ function App() {
         </button>
       </div>
       
+  <footer/>
     </>
   )
 }
