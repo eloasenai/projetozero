@@ -12,13 +12,11 @@ function App() {
       
       <h1></h1>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-         {count}
-        </button>
+      <div className="half-page-image">
+        <img src={exampleImage} alt="Example" />
       </div>
-      <div>
-        <img src={""} alt="Example" />
       </div>
+      
     </>
   )
 }
