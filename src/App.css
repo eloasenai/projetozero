@@ -1,5 +1,12 @@
 body {
-  background: #000;
+  background-color: black;
+  color: white; /* Define a cor do texto como branco para melhor contraste */
+  margin: 0;
+  padding: 0;
+  background-image: url('./components/img/fundo.png'); /* Caminho para a imagem de fundo */
+  background-repeat: no-repeat;
+  background-position: center center; /* Centraliza a imagem no centro da tela */
+  background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
 }
 
 #root {
