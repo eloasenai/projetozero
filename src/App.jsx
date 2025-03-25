@@ -1,13 +1,27 @@
 import React from 'react';
 import './App.css';
-import Logo from './Components/img/Captura de tela 2025-03-25 112327.png';
+import logoImage from './assets/logo.png'; // Corrigir a importação da imagem
 
-export const App = () => {
+const App = () => {
   return (
     <div>
       <div className="top-bar"></div>
-      <Logo />
       {/* A imagem de fundo é definida no CSS */}
+      <div className="top-bar">
+        <input 
+          type="text" 
+          className="search-bar" 
+          placeholder="Pesquisar..." 
+        />
+        <input 
+          type="text" 
+          className="small-search-bar" 
+          placeholder="Categoria"
+        />
+      </div>
+      <div className="logo-container">
+        <img className="logo" src={logoImage} alt="Logo" />
+      </div>
     </div>
   );
 }
