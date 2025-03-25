@@ -10,25 +10,36 @@ const App = () => {
         {/* <img src={imagem} alt='plano de fundo'/> */}
       </div>
 
-      <div>
-        <div className="top-bar"></div>
-        {/* A imagem de fundo é definida no CSS */}
-        <div className="top-bar">
-          <input
-            type="text"
-            className="search-bar"
-            placeholder="Pesquisar..."
-          />
-          <input
-            type="text"
-            className="small-search-bar"
-            placeholder="Categoria"
-          />
-        </div>
-        <div className="logo-container">
-          <img className="logo" src={logoImage} alt="Logo" />
-        </div>
+    <div>
+      <div className="top-bar">
+        <input 
+          type="text" 
+          className="search-bar" 
+          placeholder="Pesquisar..." 
+        />
+        <input 
+          type="text" 
+          className="small-search-bar" 
+          placeholder="Categoria"
+        />
       </div>
+      <div className="logo-container">
+        <img className="logo" src={logoImage} alt="Logo" />
+      </div>
+      <div class="button-container">
+  <div class="left-buttons">
+    <button class="button"></button>
+    <button class="button"></button>
+    <button class="button"></button>
+  </div>
+  <div class="right-buttons">
+    <button class="button"></button>
+    <button class="button"></button>
+    <button class="button"></button>
+  </div>
+</div>
+
+    </div>
     </>
   );
 };
