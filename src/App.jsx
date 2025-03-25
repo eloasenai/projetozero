@@ -1,8 +1,10 @@
 import { useState } from "react";
 import "./App.css";
-// import MovieCard from "./components/MovieCards/MovieCards";
-// import MovieDescription from "./components/MovieDescription/MovieDescription.module.css";
-// import Footer from "./components/Footer/Footer";
+ //import MovieCard from "./components/MovieCards/MovieCards";
+ //import MovieDescription from "./components/MovieDescription/MovieDescription.module.css";
+//import Footer from "./components/Footer/Footer";
+import fundo from "./components/img/image.png"
+
 
 function App() {
   const [count, setCount] = useState();
@@ -10,11 +12,10 @@ function App() {
   return (
     <>
       <h1></h1>
-      <div className="card">
-        <div className="half-page-image">
-          <img src={exampleImage} alt="Example" />
-        </div>
+      <div className="fundo">
+        <img src={fundo} alt="./components/img/image.png" />
       </div>
+        
     </>
   );
 }
