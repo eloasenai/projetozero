@@ -1,12 +1,13 @@
 body {
-    background-color: black;
-    color: white;
+    font-family: var(--font-raleway);
+    background: url('./components/img/fundo.png'); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center; /* Centraliza a imagem no centro da tela */
     margin: 0;
     padding: 0;
-    background-image: url('./components/img/fundo.png'); 
-    background-position: center center; 
-    background-size: cover; 
-}
+  }
   
   #root {
     max-width: 1280px;
