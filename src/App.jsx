@@ -5,8 +5,6 @@ import logoImage from './assets/logo.png'; // Corrigir a importação da imagem
 const App = () => {
   return (
     <div>
-      <div className="top-bar"></div>
-      {/* A imagem de fundo é definida no CSS */}
       <div className="top-bar">
         <input 
           type="text" 
@@ -22,6 +20,19 @@ const App = () => {
       <div className="logo-container">
         <img className="logo" src={logoImage} alt="Logo" />
       </div>
+      <div class="button-container">
+  <div class="left-buttons">
+    <button class="button"></button>
+    <button class="button"></button>
+    <button class="button"></button>
+  </div>
+  <div class="right-buttons">
+    <button class="button"></button>
+    <button class="button"></button>
+    <button class="button"></button>
+  </div>
+</div>
+
     </div>
   );
 }
