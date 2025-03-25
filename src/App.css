@@ -1,12 +1,13 @@
 body {
-    background-color: black;
-    color: white;
+    /* background: url('./Components/img/Captura de tela 2025-03-25 112327.png');  */
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center; /* Centraliza a imagem no centro da tela */
     margin: 0;
     padding: 0;
-    background-image: url('./Components/img/Capturadetela2025-03-25 112327.png'); 
-    background-position: center center; 
-    background-size: cover; 
-}
+  }
+  
   
   #root {
     max-width: 1280px;
