@@ -24,42 +24,25 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-}
-
-.search-bar {
-  flex: 1;
-  width: 400px;
-  padding: 10px 100px;
-  border: 1px solid #ffffff;
-  border-radius: 4px;
-  top: 100px;
-  left: 35%;
-  border-radius: 40px;
-  position: absolute;
-  font-size: 15px;
-  background-color: #888888;
-}
-.small-search-bar {
-  position: absolute;
-  top: 100px;
-  left: 10%;
-  width: 200px; 
-  padding: 10px 15px;
-  border: 1px solid #ffffff;
-  border-radius: 40px;
-  font-size: 14px;
-  background-color: #FCA7DB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  z-index: 1; /* Define a ordem de empilhamento da barra de pesquisa */
 }
 
 .logo-container {
   display: flex;
   justify-content: center;
-  align-items:end;
+  align-items: end;
   padding: 20px;
+  margin-top: 60px; /* Adiciona espaço acima da imagem para ficar abaixo da barra de pesquisa */
+  position: relative;
+  z-index: 2; 
 }
 
 .logo {
-  max-width: 700px; /* Ajuste o tamanho conforme necessário */
+  width: 400px; 
   height: auto;
 }
 
@@ -69,6 +52,57 @@ body {
 
 .small-search-bar {
   margin: 10px;
+  position: absolute;
+  top: 100px;
+  left: 10%;
+  width: 200px; 
+  padding: 10px 15px;
+  border: 1px solid #ffffff;
+  border-radius: 40px;
+  font-size: 14px;
+  background-color: #FCA7DB;
+  color: #ffffff; 
+}
+
+.small-search-bar::placeholder {
+  color: #ffffff; 
+}
+
+.button-container {
+  position:relative;
+  width: 100%;
+  max-width: 1280px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.left-buttons, .right-buttons {
+  position: fixed; /* Mantém os botões sempre visíveis */
+  top: 100%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column; /* Organiza os botões verticalmente */
+  gap: 110px; /* Espaço entre os botões */
+}
+
+.left-buttons {
+  left: 20px; /* Alinha os botões à esquerda */
+}
+
+.right-buttons {
+  right: 20px; /* Alinha os botões à direita */
+}
+
+.button {
+  width: 68px; /* Tamanho fixo para todos os botões */
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #888888;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  height: 100px;
 }
 
 .app-container {
