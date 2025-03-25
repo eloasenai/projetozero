@@ -1,18 +1,13 @@
-import { useState } from 'react'
-import './App.css'
-// import MovieCard from "./components/MovieCards/MovieCards";
-// import MovieDescription from "./components/MovieDescription/MovieDescription.module.css";
-// import Footer from "./components/Footer/Footer";
+import React from 'react';
+import './App.css';
 
-function App() {
-  const [count, setCount] = useState()
-
+export const App = () => {
   return (
-    <>
-      
-
-    </>
-  )
+    <div>
+      <div className="top-bar"></div>
+      {/* A imagem de fundo é definida no CSS */}
+    </div>
+  );
 }
 
-export default App
+export default App;
