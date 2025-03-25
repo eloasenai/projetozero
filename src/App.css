@@ -70,3 +70,77 @@ body {
 .small-search-bar {
   margin: 10px;
 }
+
+.app-container {
+    padding: 20px;
+    background-color: #141414;
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+  
+  .movie-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+  }
+  
+  .movie-card {
+    background-color: #222;
+    border: 2px solid #e50914;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .movie-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .movie-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .movie-title {
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    max-width: 400px;
+    width: 90%;
+  }
+  
+  .close-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #e50914;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .close-button:hover {
+    background-color: #b00710;
+  }
