@@ -78,30 +78,32 @@ body {
   color: #888888; /* Cor do placeholder */
 }
 
-
-.right-buttons {
+.button-container {
   display: flex;
-  flex-direction: column; /*Alinha os botões verticalmente*/
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
 }
 
-.left-buttons {
+.left-buttons,
+.right-buttons {
   display: flex;
-  flex-direction: column; /*Alinha os botões verticalmente */
+  flex-direction: column;
+  gap: 70px;
 }
 
 .button {
   width: 70px; /* Largura do botão */
-  height: 170px; /* Altura do botão */
+  height: 109px; /* Altura do botão */
   padding: 10px;
   border: none;
   border-radius: 10px;
-  background-color: #96959561;
+  background-color: #595a5a80;
   color: white;
   cursor: pointer;
   transition: 0.3s ease-in-out;
 }
 
 .button:hover {
-  background-color: #FCA7DB; /* Cor ao passar o mouse */
-  color: black;
+  background-color: #f736ad;
 }
