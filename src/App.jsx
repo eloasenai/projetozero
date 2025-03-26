@@ -1,19 +1,32 @@
 
 import React from 'react';
 import './App.css';
-import logoImage from './assets/logo.png'; // Corrigir a importação da imagem
-
+import logoImage from './assets/logo.png'; 
+import icone from "./assets/bookmark-outline.svg"
 const App = () => {
+
+  const apiKey="b194a75bc2a255114e63e9228d1e4eb9";
+  const apiUrl="https://api.themoviedb.org/3"
+
+  const searchMovies = async (title) => {
+    const response = await fetch(`${apiUrl}&s=${title}`);
+    const data = await response.json();
+
+   
+    setMovies(data.Search);
+  };
+  
+  
   return (
     <>
       <div className="top-left-image">
-        {/* <img src={imagem} alt='plano de fundo'/> */}
+
       </div> 
 
 
     <div>
       <div className="top-bar"></div>
-      {/* A imagem de fundo é definida no CSS */}
+      {}
       <div className="top-bar">
         <input 
           type="text" 
@@ -29,6 +42,8 @@ const App = () => {
       <div className="logo-container">
         <img className="logo" src={logoImage} alt="Logo" />
       </div>
+
+
     </div>
 
     <div className="top-bar">
@@ -42,11 +57,9 @@ const App = () => {
             type="text" 
             className="small-search-bar" 
             placeholder="Categoria "
+
             />
-             <div className="vertical-bars">
-          <div className="vertical-bar"></div>
-          <div className="vertical-bar"></div>
-        </div>
+         
         </div>
     </>
   );
